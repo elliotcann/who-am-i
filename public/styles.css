@@ -1,19 +1,48 @@
-    body {
-      font-family: Arial, sans-serif;
-      margin: 3rem;
-      background-color: #f4f4f4;
+body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 0;
+        background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+        min-height: 100vh;
     }
     .container {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      max-width: 600px;
-      margin: auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 2.5rem 2rem;
+        border-radius: 16px;
+        max-width: 420px;
+        margin: 5rem auto;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+        border: 1px solid #e3e3e3;
     }
     h1 {
-      color: #333;
+        color: #2d3748;
+        margin-bottom: 2rem;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
     }
     p {
-      font-size: 1.1rem;
+        font-size: 1.15rem;
+        color: #444;
+        margin: 0.7rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: #f8fafc;
+        padding: 0.7rem 1rem;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(44, 62, 80, 0.03);
+    }
+    strong {
+        color: #0077b6;
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+    span {
+        color: #22223b;
+        font-family: 'Fira Mono', 'Consolas', monospace;
+        font-size: 1.08rem;
+        word-break: break-all;
     }

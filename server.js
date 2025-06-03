@@ -5,18 +5,14 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-app.get('/apiwhoami', (req, res) => {
-  const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
-  const language = req.headers['accept-language'];
-  const software = req.headers['user-agent'];
-
+app.get('/api/whoami', (req, res) => {
   res.json({
-    ipaddress: ip,
-    language: language,
-    software: software
+    ipaddress: req.ip,
+    language: req.headers['accept-language'],
+    software: req.headers['user-agent']
   });
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
