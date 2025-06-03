@@ -20,10 +20,12 @@
   },
   "homepage": "https://github.com/elliotcann/who-am-i#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.21",
     "express": "^5.1.0",
-    "tailwind": "^4.0.0"
+    "postcss": "^8.5.4"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "postcss-cli": "^11.0.1"
   }
 }
